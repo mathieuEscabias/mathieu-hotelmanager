@@ -84,7 +84,7 @@ class RoomManager extends AbstractManager implements ManagerInterface {
 
         $statement = $this->pdo->prepare($query);
         $statement->execute([
-            'number' => $data['number'],
+            'number' => $data['number']
         ]);
     }
 

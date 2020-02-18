@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	nouvelle d'un utilisateur
+{% endblock title %}
+
+{% block content %}
+
+<form action="" method="post" class="form">
+
+
+		<div class="form-group">
+			<label for="formNumber">number</label>
+<input id="formNumber" type="number" class="form-control" name="number" value="{{ room.number }}">
+		</div>
+
+		<div class="pull-right">
+			<button href="{{ env.base_path }}" type="submit" class="btn btn-primary">Créer chambre</button>
+		</div>
+
+
+	</div>
+
+</form>
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Gestionnaire de la clientele
+{% endblock %}
+
+{% block content %}
+
+<ul>
+	{% for client in clients %}
+		<li>{{ client.firstname }}</li>
+        <li>{{ client.lastname }}</li>
+        <li>{{ client.entry_date }}</li>
+        <li>{{ client.departure_date }}</li>
+        <li>-----------------------------------------</li>
+	{% endfor %}
+</ul>
+
+{% endblock %}

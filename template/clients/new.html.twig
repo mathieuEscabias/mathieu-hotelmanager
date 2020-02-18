@@ -1,0 +1,41 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	nouvelle d'un utilisateur
+{% endblock title %}
+
+{% block content %}
+
+<form action="" method="post" class="form">
+
+		<div class="form-group">
+			<label for="formFirstname">Prénom</label>
+			<input id="formFirstname" type="text" class="form-control" name="firstname" value="{{ client.firstname }}">
+		</div>
+
+		<div class="form-group">
+			<label for="formLastname">Nom</label>
+			<input id="formLastname" type="text" class="form-control" name="lastname" value="{{ client.lastname }}">
+		</div>
+
+		<div class="form-group">
+			<label for="formEntryDate">date d'entrée</label>
+<input id="formEntryDate" type="date" class="form-control" name="entry_date" value="{{ client.entry_date }}">
+
+		</div>
+
+		<div class="form-group">
+			<label for="formDepartureDate">date de sortie</label>
+<input id="formDepartureDate" type="date" class="form-control" name="departure_date" value="{{ client.departure_date }}">
+
+		</div>
+
+		<div class="pull-right">
+			<button href="{{ env.base_path }}" type="submit" class="btn btn-primary">Créer l'utilisateur</button>
+		</div>
+
+
+	</div>
+
+</form>
+{% endblock content %}
